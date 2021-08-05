@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce_cms",
+  "version": "1.0.0",
+  "description": "An ecommerce stores CMS built with React and NodeJS (Express)",
+  "repository": "https://github.com/Yrkan/ecommerce_cms",
+  "author": "Thami Memel <memelthami@gmail.com>",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "server:start": "yarn workspace @ecommerce-cms/server start",
+    "server:dev": "yarn workspace @ecommerce-cms/server dev",
+    "client:dev": "PORT=3000 yarn workspace @ecommerce-cms/client start",
+    "client:build": "yarn workspace @ecommerce-cms/client build",
+    "cpanel:dev": "PORT=3001 yarn workspace @ecommerce-cms/cpanel start",
+    "cpanel:build": "yarn workspace @ecommerce-cms/cpanel build",
+    "dev": "concurrently \"yarn server:dev\" \"yarn client:dev\" \"yarn cpanel:dev\""
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
