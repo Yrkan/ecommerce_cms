@@ -1,6 +1,6 @@
-#@ecommerce-cms/client
+#@ecommerce-cms/client  
 
-Client Website.
+Client Website.  
 
-start dev server: $ yarn start
-build deployment: $ yarn build
+start dev server: $ yarn start  
+build deployment: $ yarn build  
