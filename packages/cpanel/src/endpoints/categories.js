@@ -19,7 +19,7 @@ export const CategoryList = (props) => (
   <List {...props}>
     <Datagrid rowClick="edit">
       <TextField source="name" />
-      <ArrayField source="drinks">
+      <ArrayField source="sub_category">
         <SingleFieldList>
           <SimpleChipField />
         </SingleFieldList>
