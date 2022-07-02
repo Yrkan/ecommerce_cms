@@ -6,13 +6,6 @@ const Navbar = () => {
       <div className="container-fluid px-0">
         <nav className="navbar navbar-expand-lg navbar-light py-0 fixed-top">
           <div className="container-fluid d-flex">
-            <a className="navbar-brand" href="/#">
-              <img
-                src="./public/images/LOGO.svg"
-                alt=""
-                className="d-inline-block align-text-middle"
-              />
-            </a>
 
             <div className="order-lg-4">
               <button
