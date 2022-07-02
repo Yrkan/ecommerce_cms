@@ -19,7 +19,7 @@ export const CategoryList = (props) => (
   <List {...props}>
     <Datagrid rowClick="edit">
       <TextField source="name" />
-      <ArrayField source="sub_category">
+      <ArrayField label="SUb category" source="drinks">
         <SingleFieldList>
           <SimpleChipField />
         </SingleFieldList>
@@ -32,7 +32,7 @@ export const CategoryCreate = (props) => (
   <Create {...props}>
     <SimpleForm>
       <TextInput source="name" validate={required()} />
-      <ArrayInput source="drinks" validate={required()}>
+      <ArrayInput label="SUb category" source="drinks" validate={required()}>
         <SimpleFormIterator>
           <TextInput />
         </SimpleFormIterator>
@@ -46,7 +46,7 @@ export const CategoryEdit = (props) => (
     <SimpleForm>
       <TextInput disabled label="Id" source="id" />
       <TextInput source="name" validate={required()} />
-      <ArrayInput source="drinks" validate={required()}>
+      <ArrayInput label="SUb category" source="drinks" validate={required()}>
         <SimpleFormIterator>
           <TextInput />
         </SimpleFormIterator>
